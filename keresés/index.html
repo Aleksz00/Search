@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kereses</title>
+</head>
+<body>
+    <div class="box">
+        <span style="--i:1;"><img src="https://picsum.photos/id/1020/600/400" alt=""></span>
+        <span style="--i:2;"><img src="https://picsum.photos/id/237/600/400" alt=""></span>
+        <span style="--i:3;"><img src="https://picsum.photos/id/684/600/400?blur=5" alt=""></span>
+        <span style="--i:4;"><img src="https://picsum.photos/id/642/600/400" alt=""></span>
+        <span style="--i:5;"><img src="https://picsum.photos/id/945/600/400" alt=""></span>
+        <span style="--i:6;"><img src="https://picsum.photos/id/189/600/400" alt=""></span>
+        <span style="--i:7;"><img src="https://picsum.photos/id/1067/600/400" alt=""></span>
+        <span style="--i:8;"><img src="https://picsum.photos/id/431/600/400" alt=""></span>
+    </div>
+    <script type="text/javascript">
+    let box= document.querySelector('.box');
+    window.onmousemove=function(e){
+        let x=e.clientX/3;
+        box.style.transform="perspective(1000px) rotateY("+ x +"deg)";
+    }
+
+    </script>
+</body>
+</html>
